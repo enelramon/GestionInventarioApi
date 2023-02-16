@@ -15,9 +15,10 @@ namespace GestionInventarioApi.Migrations
                     AriticuloId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Descripcion = table.Column<string>(type: "TEXT", nullable: false),
-                    Marca = table.Column<int>(type: "INTEGER", nullable: false),
+                    Marca = table.Column<string>(type: "TEXT", nullable: false),
                     Precio = table.Column<double>(type: "REAL", nullable: false),
-                    Existencia = table.Column<double>(type: "REAL", nullable: false)
+                    Existencia = table.Column<double>(type: "REAL", nullable: false),
+                    ImagenUrl = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionInventarioApi.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20221001013347_Marca como string")]
-    partial class Marcacomostring
+    [Migration("20230216003209_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,6 +30,10 @@ namespace GestionInventarioApi.Migrations
 
                     b.Property<double>("Existencia")
                         .HasColumnType("REAL");
+
+                    b.Property<string>("ImagenUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Marca")
                         .IsRequired()

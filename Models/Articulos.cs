@@ -10,5 +10,6 @@ namespace GestionInventarioApi.Models
         public string Marca { get; set; }
         public double Precio { get; set; }
         public double Existencia { get; set; }
+        public string ImagenUrl { get; set; }
     }
 }
