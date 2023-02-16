@@ -29,6 +29,10 @@ namespace GestionInventarioApi.Migrations
                     b.Property<double>("Existencia")
                         .HasColumnType("REAL");
 
+                    b.Property<string>("ImagenUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Marca")
                         .IsRequired()
                         .HasColumnType("TEXT");
